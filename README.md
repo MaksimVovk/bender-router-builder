@@ -12,7 +12,7 @@ Use it if you don`t want to think about the routing of your server application.
 2) POST
 3) Upload file (in development)
 
-## Use
+## Example
 
 **project**
 
