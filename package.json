@@ -1,0 +1,20 @@
+{
+  "name": "bender-router-builder",
+  "version": "1.0.0",
+  "description": "bender-router-builder",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaksimVovk/bender-router-builder.git"
+  },
+  "author": "m.vovk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaksimVovk/bender-router-builder/issues"
+  },
+  "homepage": "https://github.com/MaksimVovk/bender-router-builder#readme",
+  "dependencies": {
+    "camelcase": "^5.3.1",
+    "express": "^4.17.1"
+  }
+}
