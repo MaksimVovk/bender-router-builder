@@ -44,7 +44,7 @@ module.exports = function ({ path }) {
     } else if (typeof fnObject === 'object') {
       const keys = Object.keys(fnObject)
       keys.forEach(o => {
-        router.use(`/${o}.${camelcase(k)}`, wraperr(fnObject[o]))
+        router.use(`/${k}.${camelcase(o)}`, wraperr(fnObject[o]))
       })
     }
   })
