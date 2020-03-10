@@ -1,6 +1,6 @@
 {
   "name": "bender-router-builder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "bender-router-builder",
   "main": "index.js",
   "repository": {
