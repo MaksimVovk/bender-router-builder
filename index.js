@@ -16,8 +16,8 @@ module.exports = function ({ path }) {
 
   const features = fs.readdirSync(path).filter(it => it !== 'index.js').map(it => getModuleName(it))
 
-  function wraperr (fn) {
-    return router.all('/', function (req, res, next) {
+  function wraperr (fn, rout) {
+    return router.all(rout, function (req, res, next) {
       const METHOD = req.method
 
       if (METHOD === 'GET') {
@@ -44,7 +44,8 @@ module.exports = function ({ path }) {
     } else if (typeof fnObject === 'object') {
       const keys = Object.keys(fnObject)
       keys.forEach(o => {
-        router.use(`/${k}.${camelcase(o)}`, wraperr(fnObject[o]))
+        const rout = `/${k}.${camelcase(o)}`
+        wraperr(fnObject[o], rout)
       })
     }
   })
